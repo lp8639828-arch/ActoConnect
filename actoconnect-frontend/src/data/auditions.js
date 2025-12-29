@@ -1,0 +1,80 @@
+export const auditions = [
+  {
+    id: 1,
+    title: "Netflix Web Series Lead",
+    type: "Web Series",
+    role: "Female Lead",
+    director: "Pooja Arora",
+    location: "Mumbai",
+    deadline: "2025-01-15",
+    description: "Looking for a charismatic female lead for a coming-of-age story set in modern Mumbai.",
+    requirements: ["Age 25-35", "Fluent Hindi & English", "Previous web series experience preferred"],
+    compensation: "₹2,50,000 per episode",
+    status: "Open"
+  },
+  {
+    id: 2,
+    title: "Music Video Female Lead",
+    type: "Music Video",
+    role: "Dancer/Actor",
+    director: "Rajesh Kumar",
+    location: "Delhi",
+    deadline: "2025-01-20",
+    description: "Bollywood music video featuring contemporary dance and emotional acting.",
+    requirements: ["Professional dancer", "Age 20-30", "Dance experience in Bollywood style"],
+    compensation: "₹1,00,000 + royalties",
+    status: "Open"
+  },
+  {
+    id: 3,
+    title: "Theatre Play Mumbai",
+    type: "Theatre",
+    role: "Supporting Actor",
+    director: "Neeraj Malhotra",
+    location: "Mumbai",
+    deadline: "2025-01-10",
+    description: "Contemporary theatre production exploring urban relationships.",
+    requirements: ["Theatre experience", "Age 25-40", "Strong emotional range"],
+    compensation: "₹50,000 per month",
+    status: "Open"
+  },
+  {
+    id: 4,
+    title: "Short Film Protagonist",
+    type: "Short Film",
+    role: "Male Lead",
+    director: "Meera Joshi",
+    location: "Bangalore",
+    deadline: "2025-01-25",
+    description: "Experimental short film about identity and self-discovery.",
+    requirements: ["Age 22-35", "Method acting experience", "Open to abstract concepts"],
+    compensation: "₹75,000 + festival share",
+    status: "Open"
+  },
+  {
+    id: 5,
+    title: "Commercial Brand Ambassador",
+    type: "Commercial",
+    role: "Brand Face",
+    director: "Arjun Reddy",
+    location: "Hyderabad",
+    deadline: "2025-01-30",
+    description: "National commercial campaign for a leading lifestyle brand.",
+    requirements: ["Photogenic", "Age 20-28", "Fresh face preferred"],
+    compensation: "₹3,00,000 per campaign",
+    status: "Open"
+  },
+  {
+    id: 6,
+    title: "Documentary Narrator",
+    type: "Documentary",
+    role: "Voice Actor",
+    director: "Rajesh Kumar",
+    location: "Chennai",
+    deadline: "2025-02-05",
+    description: "Voice narration for a documentary on Indian classical music.",
+    requirements: ["Clear voice", "Knowledge of music", "Recording experience"],
+    compensation: "₹25,000 + per episode",
+    status: "Open"
+  }
+];

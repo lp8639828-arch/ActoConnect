@@ -1,0 +1,171 @@
+/* Acty Avatar - Cute Indian Virtual Assistant */
+
+.acty-avatar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: bounceIn 0.8s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3) translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05) translateY(-10px);
+  }
+  70% {
+    transform: scale(0.9) translateY(0);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.avatar-dialog {
+  margin-bottom: 10px;
+  animation: dialogFloat 3s ease-in-out infinite;
+}
+
+@keyframes dialogFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.dialog-bubble {
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  border-radius: 20px 20px 5px 20px;
+  padding: 15px 20px;
+  max-width: 250px;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(59, 47, 47, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+.dialog-bubble p {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.dialog-arrow {
+  position: absolute;
+  bottom: -10px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--border);
+}
+
+.dialog-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--card-bg);
+}
+
+.avatar-image {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--accent), #FF8A7A);
+  border-radius: 50%;
+  border: 3px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(253, 93, 78, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: gentleBounce 2s ease-in-out infinite;
+}
+
+.avatar-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(253, 93, 78, 0.4);
+}
+
+@keyframes gentleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.avatar-face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.avatar-eyes {
+  font-size: 16px;
+  margin-bottom: 2px;
+  filter: brightness(0.8);
+}
+
+.avatar-mouth {
+  font-size: 14px;
+}
+
+.avatar-body {
+  position: absolute;
+  bottom: -5px;
+}
+
+.avatar-dress {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.avatar-name {
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(59, 47, 47, 0.1);
+  text-align: center;
+  min-width: 60px;
+}
+
+@media (max-width: 768px) {
+  .acty-avatar {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .avatar-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .dialog-bubble {
+    max-width: 200px;
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .avatar-name {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+}
